@@ -12,6 +12,7 @@ header{
     color: #ffffff;
     height: 100px;
     align-items: center;
+    line-height: 50px;
 }
 ul{
     list-style-type: none;
@@ -110,12 +111,15 @@ header .itens{
 .list-servico{
     width: 100%;
     height: 300px;
+    margin-bottom: 20px;
 }
 
 #servico h2{
     font-size: 32px;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    width: 30%;
+    text-align: center;    
 }
 .item-servico{
     display: flex;
@@ -124,7 +128,7 @@ header .itens{
     justify-content: space-around;
     }
 
-.item-servico a{
+.btn{
     background-color: #ffffff;
     color: #004466;
     border-radius: 30px;
@@ -146,6 +150,98 @@ font-weight: bold;
 }
 /*Planos*/
 
-.flex-container{
+#planos h2{
+    color: #004466;
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 80vh;
+    padding-top: 50px;
+}
+
+.list-planos{
     display: flex;
+    align-items:flex-end;
+    justify-content: space-around;
+    
+}
+
+.item-plano{
+    flex:0.2;
+    border: 5px solid #004466;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+    max-width: 240px;
+    
+}
+
+.item-plano h3{
+    color: #004466;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.item-plano h3::after{
+    content:"";
+    background-color: #004466;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item-plano .btn{
+    background-color: #004466;
+    color: #ffffff;
+    margin-bottom: 30px;
+  
+}
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+} 
+
+.item-plano ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #004466;
+    margin-right: 5px;
+}
+/*rodapé*/
+footer{
+    background-color: #004466;
+    height: 70px;
+}
+.footer{
+    display: flex;
+    color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 60px;
+}
+
+/*responsivo*/
+/*mobile*/
+@media(max-width: 992px){
+    .container .conteudo{
+        flex-direction: column;
+    }
+    
 }
